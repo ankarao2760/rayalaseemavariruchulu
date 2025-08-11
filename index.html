@@ -991,6 +991,11 @@
             z-index: 1;
         }
 
+        .contact-text p a {
+            color: inherit;
+            text-decoration: none;
+        }
+
         .contact-info {
             display: flex;
             flex-direction: column;
@@ -1522,7 +1527,7 @@
             }
 
             .contact-container {
-                grid-template-columns: 1fr;
+                grid-template-columns: 0.5fr;
                 gap: 3rem;
             }
 
@@ -1569,6 +1574,52 @@
 
             .menu-item-price {
                 font-size: 1.1rem;
+            }
+        }
+
+        /* Add these media queries at the end of your existing CSS */
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+
+            .contact-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 1.5rem;
+            }
+
+            .contact-icon {
+                margin-bottom: 0.5rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            .contact-form h3::after {
+                width: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact {
+                padding: 4rem 1rem;
+            }
+
+            .contact-card,
+            .contact-form {
+                transform: none;
+                opacity: 1;
+                animation: none;
+            }
+
+            .submit-btn {
+                padding: 1rem 2rem;
             }
         }
     </style>
@@ -1644,8 +1695,7 @@
                 </p>
             </div>
             <div class="about-image">
-                <img src="./Location.jpg"
-                    alt="Restaurant Interior">
+                <img src="./Location.jpg" alt="Restaurant Interior">
             </div>
         </div>
     </section>
@@ -1890,8 +1940,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Veg-Manchow-Soup.jpg"
-                                alt="Veg Manchow Soup">
+                            <img src="./Assests/Soups/Veg-Manchow-Soup.jpg" alt="Veg Manchow Soup">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -1907,8 +1956,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Sweet Corn Soup.jpg"
-                                alt="Sweet Corn Soup">
+                            <img src="./Assests/Soups/Sweet Corn Soup.jpg" alt="Sweet Corn Soup">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -1924,8 +1972,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Chicken Manchow Soup.webp"
-                                alt="Chicken Manchow Soup">
+                            <img src="./Assests/Soups/Chicken Manchow Soup.webp" alt="Chicken Manchow Soup">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -1940,8 +1987,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Hot & Sour Chicken Soup.jpg"
-                                alt="Hot & Sour Chicken Soup">
+                            <img src="./Assests/Soups/Hot & Sour Chicken Soup.jpg" alt="Hot & Sour Chicken Soup">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -1956,8 +2002,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Chicken Garlic Soup.jpg"
-                                alt="Chicken Garlic Soup">
+                            <img src="./Assests/Soups/Chicken Garlic Soup.jpg" alt="Chicken Garlic Soup">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -1973,8 +2018,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Soups/Miriyala Rasam.jpg"
-                                alt="Miriyala Rasam">
+                            <img src="./Assests/Soups/Miriyala Rasam.jpg" alt="Miriyala Rasam">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2306,8 +2350,7 @@
                     <!-- Ragi Mudha -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Rayalaseema/Raagi.jpg"
-                                alt="Ragi Mudha">
+                            <img src="./Assests/Rayalaseema/Raagi.jpg" alt="Ragi Mudha">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2324,8 +2367,7 @@
                     <!-- Natukodi Pulusu -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Rayalaseema/Naatu kodi pulusu.jpg"
-                                alt="Natukodi Pulusu">
+                            <img src="./Assests/Rayalaseema/Naatu kodi pulusu.jpg" alt="Natukodi Pulusu">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2342,8 +2384,7 @@
                     <!-- Natukodi Iguru -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Rayalaseema/Natu-Kodi-Kura-M3.jpg"
-                                alt="Natukodi Iguru">
+                            <img src="./Assests/Rayalaseema/Natu-Kodi-Kura-M3.jpg" alt="Natukodi Iguru">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2760,8 +2801,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Plain Pulav.jpg"
-                                alt="Plain Pulao">
+                            <img src="./Assests/Pulao/Plain Pulav.jpg" alt="Plain Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2776,8 +2816,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/veg pulao.jpg"
-                                alt="Veg Pulao">
+                            <img src="./Assests/Pulao/veg pulao.jpg" alt="Veg Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2793,8 +2832,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/mushroom.jpeg"
-                                alt="Mushroom Pulao">
+                            <img src="./Assests/Pulao/mushroom.jpeg" alt="Mushroom Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2810,8 +2848,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/kaaju paneer.jpg"
-                                alt="Kaaju Paneer Pulao">
+                            <img src="./Assests/Pulao/kaaju paneer.jpg" alt="Kaaju Paneer Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2827,8 +2864,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Chicken Pulao.jpg"
-                                alt="Chicken Pulao">
+                            <img src="./Assests/Pulao/Chicken Pulao.jpg" alt="Chicken Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2843,8 +2879,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/chicken fry.jpg"
-                                alt="Chicken Fry Pulao">
+                            <img src="./Assests/Pulao/chicken fry.jpg" alt="Chicken Fry Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2859,8 +2894,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/MuttonPulao.webp"
-                                alt="Mutton Pulao">
+                            <img src="./Assests/Pulao/MuttonPulao.webp" alt="Mutton Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2875,8 +2909,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Prawn.webp"
-                                alt="Prawns Pulao">
+                            <img src="./Assests/Pulao/Prawn.webp" alt="Prawns Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2891,8 +2924,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/mixed.jpg"
-                                alt="Mixed Pulao">
+                            <img src="./Assests/Pulao/mixed.jpg" alt="Mixed Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2907,8 +2939,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Mughalai chicken.webp"
-                                alt="Mogulai Chicken Pulao">
+                            <img src="./Assests/Pulao/Mughalai chicken.webp" alt="Mogulai Chicken Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2923,8 +2954,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Mutton moghulai.png"
-                                alt="Mogulai Mutton Pulao">
+                            <img src="./Assests/Pulao/Mutton moghulai.png" alt="Mogulai Mutton Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2939,8 +2969,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/prawn-pulao_5650.jpg"
-                                alt="Mogulai Prawns Pulao">
+                            <img src="./Assests/Pulao/prawn-pulao_5650.jpg" alt="Mogulai Prawns Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2955,8 +2984,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Gongura Chicken Pulav.jpg"
-                                alt="Gongura Chicken Pulao">
+                            <img src="./Assests/Pulao/Gongura Chicken Pulav.jpg" alt="Gongura Chicken Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2971,8 +2999,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Gongura Mutton Pulav.jpg"
-                                alt="Gongura Mutton Pulao">
+                            <img src="./Assests/Pulao/Gongura Mutton Pulav.jpg" alt="Gongura Mutton Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -2987,8 +3014,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/gongura prawn.jpg"
-                                alt="Gongura Prawns Pulao">
+                            <img src="./Assests/Pulao/gongura prawn.jpg" alt="Gongura Prawns Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3003,8 +3029,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Pulao/Rajula.jpg"
-                                alt="Rajula Pulao">
+                            <img src="./Assests/Pulao/Rajula.jpg" alt="Rajula Pulao">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3028,8 +3053,7 @@
                     <!-- Chilli Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Chilli Chicken.jpeg"
-                                alt="Chilli Chicken">
+                            <img src="./Assests/Non-Veg Starters/Chilli Chicken.jpeg" alt="Chilli Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3046,8 +3070,7 @@
                     <!-- Chicken Manchurian -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Chicken manchuria.jpeg"
-                                alt="Chicken Manchurian">
+                            <img src="./Assests/Non-Veg Starters/Chicken manchuria.jpeg" alt="Chicken Manchurian">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3064,8 +3087,7 @@
                     <!-- Chicken 65 -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Chicken 65.JPG"
-                                alt="Chicken 65">
+                            <img src="./Assests/Non-Veg Starters/Chicken 65.JPG" alt="Chicken 65">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3082,8 +3104,7 @@
                     <!-- Chicken Majestic -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Majestic.jpeg"
-                                alt="Chicken Majestic">
+                            <img src="./Assests/Non-Veg Starters/Majestic.jpeg" alt="Chicken Majestic">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3100,8 +3121,7 @@
                     <!-- Chicken 555 -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/chicken 555.jpg"
-                                alt="Chicken 555">
+                            <img src="./Assests/Non-Veg Starters/chicken 555.jpg" alt="Chicken 555">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3118,8 +3138,7 @@
                     <!-- Chicken Lollipop -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/chicken lollipop.jpeg"
-                                alt="Chicken Lollipop">
+                            <img src="./Assests/Non-Veg Starters/chicken lollipop.jpeg" alt="Chicken Lollipop">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3136,8 +3155,7 @@
                     <!-- Chicken Drumsticks -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Chicken Drumsticks.jpeg"
-                                alt="Chicken Drumsticks">
+                            <img src="./Assests/Non-Veg Starters/Chicken Drumsticks.jpeg" alt="Chicken Drumsticks">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3154,8 +3172,7 @@
                     <!-- Dragon Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Dragon.jpg"
-                                alt="Dragon Chicken">
+                            <img src="./Assests/Non-Veg Starters/Dragon.jpg" alt="Dragon Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3172,8 +3189,7 @@
                     <!-- Pepper Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/pepper.JPG"
-                                alt="Pepper Chicken">
+                            <img src="./Assests/Non-Veg Starters/pepper.JPG" alt="Pepper Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3190,8 +3206,7 @@
                     <!-- Crispy Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/crispy.jpg"
-                                alt="Crispy Chicken">
+                            <img src="./Assests/Non-Veg Starters/crispy.jpg" alt="Crispy Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3208,8 +3223,7 @@
                     <!-- Chicken Roast -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/roasr.webp"
-                                alt="Chicken Roast">
+                            <img src="./Assests/Non-Veg Starters/roasr.webp" alt="Chicken Roast">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3225,8 +3239,7 @@
                     <!-- Kaju Chicken Dry -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/kaaju dry.jpg"
-                                alt="Kaju Chicken Dry">
+                            <img src="./Assests/Non-Veg Starters/kaaju dry.jpg" alt="Kaju Chicken Dry">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3243,8 +3256,7 @@
                     <!-- Garlic Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/garlic.jpg"
-                                alt="Garlic Chicken">
+                            <img src="./Assests/Non-Veg Starters/garlic.jpg" alt="Garlic Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3261,8 +3273,7 @@
                     <!-- Schezwan Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/schezwan.jpeg"
-                                alt="Schezwan Chicken">
+                            <img src="./Assests/Non-Veg Starters/schezwan.jpeg" alt="Schezwan Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3279,8 +3290,7 @@
                     <!-- Rayalaseema Special Dry Chicken -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/dry chichen.jpg"
-                                alt="Rayalaseema Special Dry Chicken">
+                            <img src="./Assests/Non-Veg Starters/dry chichen.jpg" alt="Rayalaseema Special Dry Chicken">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3297,8 +3307,7 @@
                     <!-- Prawns 65 -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/prawns 65.jpg"
-                                alt="Prawns 65">
+                            <img src="./Assests/Non-Veg Starters/prawns 65.jpg" alt="Prawns 65">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3315,8 +3324,7 @@
                     <!-- Chilli Prawns -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/chilli prawns.jpg"
-                                alt="Chilli Prawns">
+                            <img src="./Assests/Non-Veg Starters/chilli prawns.jpg" alt="Chilli Prawns">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3333,8 +3341,7 @@
                     <!-- Godavari Royya Vepudu -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/royya vepudu.jpg"
-                                alt="Godavari Royya Vepudu">
+                            <img src="./Assests/Non-Veg Starters/royya vepudu.jpg" alt="Godavari Royya Vepudu">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3351,8 +3358,7 @@
                     <!-- Godavari Kodi Vepudu -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/kodi vepudu.jpeg"
-                                alt="Godavari Kodi Vepudu">
+                            <img src="./Assests/Non-Veg Starters/kodi vepudu.jpeg" alt="Godavari Kodi Vepudu">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3369,8 +3375,7 @@
                     <!-- Apolo Fish -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/apolo.jpg"
-                                alt="Apolo Fish">
+                            <img src="./Assests/Non-Veg Starters/apolo.jpg" alt="Apolo Fish">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3386,8 +3391,7 @@
                     <!-- Fish Fry -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/fish fry.jpg"
-                                alt="Fish Fry">
+                            <img src="./Assests/Non-Veg Starters/fish fry.jpg" alt="Fish Fry">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3403,8 +3407,7 @@
                     <!-- Mutton 65 -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/mutton 65.jpg"
-                                alt="Mutton 65">
+                            <img src="./Assests/Non-Veg Starters/mutton 65.jpg" alt="Mutton 65">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3421,8 +3424,7 @@
                     <!-- Mutton Ghee Roast -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/mutton roast.jpeg"
-                                alt="Mutton Ghee Roast">
+                            <img src="./Assests/Non-Veg Starters/mutton roast.jpeg" alt="Mutton Ghee Roast">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3439,8 +3441,7 @@
                     <!-- Omelette -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/omlette.jpg"
-                                alt="Omelette">
+                            <img src="./Assests/Non-Veg Starters/omlette.jpg" alt="Omelette">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3456,8 +3457,7 @@
                     <!-- Boiled Egg -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Hard-Boiled-Eggs-9.webp"
-                                alt="Boiled Egg">
+                            <img src="./Assests/Non-Veg Starters/Hard-Boiled-Eggs-9.webp" alt="Boiled Egg">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3473,8 +3473,7 @@
                     <!-- Chilli Egg -->
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="./Assests/Non-Veg Starters/Chiili egg.jpg"
-                                alt="Chilli Egg">
+                            <img src="./Assests/Non-Veg Starters/Chiili egg.jpg" alt="Chilli Egg">
                         </div>
                         <div class="menu-item-content">
                             <div class="menu-item-header">
@@ -3679,12 +3678,14 @@
                 </div>
             </div>
 
+
+            <!--Non Veg Curries-->
             <div class="menu-items-container" id="non-veg-curries">
                 <div class="menu-items-grid">
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Chicken-Curry-recipe.jpg"
                                 alt="Chicken Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3700,7 +3701,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Chicken Masala.jpg"
                                 alt="Chicken Masala">
                         </div>
                         <div class="menu-item-content">
@@ -3716,7 +3717,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/kadai chicken.jpg"
                                 alt="Kadai Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3732,7 +3733,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1605027115079-61f37f8f6df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Afghani.jpg"
                                 alt="Afghani Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3748,7 +3749,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/chicken-do-pyaza-murgh-do-pyaza-chicken-do-pyaza-in-hindi.jpg"
                                 alt="Chicken Dopyaza">
                         </div>
                         <div class="menu-item-content">
@@ -3764,7 +3765,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Butter-Chicken.jpg"
                                 alt="Butter Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3780,7 +3781,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/mughlai.jpg"
                                 alt="Mughlai Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3796,7 +3797,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Kaju chicken.jpg"
                                 alt="Kaaju Chicken Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3812,7 +3813,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/rayalaseema-food-2-1635248094-lb.jpg"
                                 alt="Rayalaseema Spl. Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3828,7 +3829,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/kolhapuri-chicken-curry-9.jpg"
                                 alt="Chicken Kolhapuri">
                         </div>
                         <div class="menu-item-content">
@@ -3844,7 +3845,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Chicken Kheema.jpg"
                                 alt="Chicken Kheema Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3860,7 +3861,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/punjabi.jpg"
                                 alt="Panjabi Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -3876,7 +3877,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Gongura Chicken.jpg"
                                 alt="Gongura Chicken Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3892,7 +3893,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/methi.jpg"
                                 alt="Methi Chicken Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3908,7 +3909,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Mutton curry.png"
                                 alt="Mutton Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3924,7 +3925,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/kadai mutton.jpg"
                                 alt="Kadai Mutton">
                         </div>
                         <div class="menu-item-content">
@@ -3940,7 +3941,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/afghani mutton.jpg"
                                 alt="Afghani Mutton">
                         </div>
                         <div class="menu-item-content">
@@ -3956,7 +3957,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Mutton kheema.jpg"
                                 alt="Mutton Kheema Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3972,7 +3973,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Mughlai mutton.jpg"
                                 alt="Mughlai Mutton Curry">
                         </div>
                         <div class="menu-item-content">
@@ -3988,7 +3989,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Rayalaseema mutton curry.jpg"
                                 alt="Rayalaseema Mutton Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4004,7 +4005,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/GongurMuttonCover.jpg"
                                 alt="Gongura Mutton Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4020,7 +4021,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Chapala Curry.jpg"
                                 alt="Chapala Kura">
                         </div>
                         <div class="menu-item-content">
@@ -4036,7 +4037,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Fish Masala.jpg"
                                 alt="Fish Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4052,7 +4053,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Royyala.jpg"
                                 alt="Royyala Kura">
                         </div>
                         <div class="menu-item-content">
@@ -4068,7 +4069,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/prawn_masala.jpg"
                                 alt="Prawns Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4084,7 +4085,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Egg-Masala-Curry.webp"
                                 alt="Egg Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4100,7 +4101,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Egg-bhurji-1920x1080.jpg"
                                 alt="Egg Bhurji">
                         </div>
                         <div class="menu-item-content">
@@ -4116,7 +4117,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Ramba Chicken.jpg"
                                 alt="Rambha Chicken">
                         </div>
                         <div class="menu-item-content">
@@ -4132,7 +4133,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Menaka Mutton.jpg"
                                 alt="Menaka Mutton">
                         </div>
                         <div class="menu-item-content">
@@ -4148,7 +4149,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601028626010-8a4af21e7bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Non Veg Curries/Urvashi Prawns.jpg"
                                 alt="Urvasi Prawns">
                         </div>
                         <div class="menu-item-content">
@@ -4296,7 +4297,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604908177523-7caa4097bbdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Paneer Butter Masala.jpg"
                                 alt="Paneer Butter Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4312,7 +4313,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1625499879741-c046e2208b4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Kadhai-Paneer-Thumbnail-1024x1024.jpg"
                                 alt="Kadai Paneer Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4328,7 +4329,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1590080877777-983d70e8b8a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Kaju-Paneer-Masala-Recipe-4-768x614.jpg"
                                 alt="Kaaju Paneer Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4344,7 +4345,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1592712010667-7d20ed8d9e47?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/mix-veg-curry.jpg"
                                 alt="Veg Mixed Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4360,7 +4361,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604908177523-7caa4097bbdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Paneer Curry.jpg"
                                 alt="Paneer Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4376,7 +4377,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604917926055-7c5d8d85ee67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Tomato Curry.webp"
                                 alt="Tamoto Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4392,7 +4393,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/kaju-curry-recipe-860x484.jpg"
                                 alt="Kaaju Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4408,7 +4409,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1600495740477-f3b7a764d4c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Mushroom.jpg"
                                 alt="Mushroom Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4424,7 +4425,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1598514983112-253b3d4a1ef6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Baby Corn.jpg"
                                 alt="Baby Corn Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4440,7 +4441,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Kaju tomato curry.jpg"
                                 alt="Kaaju Tamoto Curry">
                         </div>
                         <div class="menu-item-content">
@@ -4456,7 +4457,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1594942833830-945d54d46ac7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Paneer-Do-Pyaaza-3.webp"
                                 alt="Paneer Dopyaza">
                         </div>
                         <div class="menu-item-content">
@@ -4472,7 +4473,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Dal-Fry-Recipe-Step-By-Step-Instructions.webp"
                                 alt="Dal Fry">
                         </div>
                         <div class="menu-item-content">
@@ -4488,7 +4489,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1617191511297-9a61c5d77a12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Dal-Tadka-Recipe-Step-By-Step-Instructions.jpg"
                                 alt="Dal Tadhaka">
                         </div>
                         <div class="menu-item-content">
@@ -4504,7 +4505,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604908177523-7caa4097bbdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Mushroom Masala.jpg"
                                 alt="Mushroom Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4520,7 +4521,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1598514983112-253b3d4a1ef6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Baby corn masala.jpg"
                                 alt="Baby Corn Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4536,7 +4537,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604917926055-7c5d8d85ee67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Veg-Kolhapuri-2-1024x769.jpg"
                                 alt="Veg Kolhapuri">
                         </div>
                         <div class="menu-item-content">
@@ -4552,7 +4553,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604908177523-7caa4097bbdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Palak-Paneer-instant-pot.jpg"
                                 alt="Palak Paneer">
                         </div>
                         <div class="menu-item-content">
@@ -4568,7 +4569,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604917926055-7c5d8d85ee67?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Plain Palak.JPG"
                                 alt="Plain Palak">
                         </div>
                         <div class="menu-item-content">
@@ -4584,7 +4585,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1601050690106-4a1d4b5a3b3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Aloo Gobi.jpg"
                                 alt="Alu Gobi Masala">
                         </div>
                         <div class="menu-item-content">
@@ -4600,7 +4601,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1604908177523-7caa4097bbdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Vegetable Do Pyazas.PNG"
                                 alt="Veg Dopyaza">
                         </div>
                         <div class="menu-item-content">
@@ -4616,7 +4617,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-img">
-                            <img src="https://images.unsplash.com/photo-1625499879741-c046e2208b4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            <img src="./Assests/Veg curries/Kadai Mushroom.jpg"
                                 alt="Kadai Mushroom">
                         </div>
                         <div class="menu-item-content">
@@ -4643,22 +4644,19 @@
 
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="./Location.jpg"
-                    alt="Restaurant Interior">
+                <img src="./Location.jpg" alt="Restaurant Interior">
                 <div class="gallery-overlay">
                     <h3>Restaurant Ambience</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="./Signature.jpg"
-                    alt="Signature Dish">
+                <img src="./Signature.jpg" alt="Signature Dish">
                 <div class="gallery-overlay">
                     <h3>Signature Biryani</h3>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="./Assests/Deserts/Junnu.jpg"
-                    alt="Chef Special">
+                <img src="./Assests/Deserts/Junnu.jpg" alt="Chef Special">
                 <div class="gallery-overlay">
                     <h3>Chef's Special</h3>
                 </div>
@@ -4678,8 +4676,7 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="./Interior.jpg"
-                    alt="Special Events">
+                <img src="./Interior.jpg" alt="Special Events">
                 <div class="gallery-overlay">
                     <h3>Special Events</h3>
                 </div>
@@ -4696,13 +4693,16 @@
         <div class="contact-container">
             <div class="contact-info">
                 <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
+                    <div class="contact-icon">📍</div>
                     <div class="contact-text">
                         <h3>Address</h3>
-                        <p>Road No-1, Inside GHMC ground, Kukatpally Housing Board Colony, Kukatpally, Hyderabad,
-                            Telangana 500072</p>
+                        <p>
+                            <a href="https://maps.app.goo.gl/o7u51P2Et4JgrChh7" target="_blank"
+                                rel="noopener noreferrer" class="address-link">
+                                Road No-1, Inside GHMC ground,<br>
+                                Kukatpally Housing Board Colony, Hyderabad, 500072
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="contact-card">
@@ -4711,7 +4711,7 @@
                     </div>
                     <div class="contact-text">
                         <h3>Phone</h3>
-                        <p>+91 9966168343</p>
+                        <p><a href="tel:+919966168343">+919966168343</a></p>
                     </div>
                 </div>
                 <div class="contact-card">
@@ -4768,8 +4768,8 @@
                     recipes and quality ingredients sets us apart.</p>
                 <div class="social-links">
                     <a href="https://wa.me/+919966168343" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/rayalaseemavariruchulu?igsh=cW14aWk1eXBobXNp" aria-label="Instagram"><i
-                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/rayalaseemavariruchulu?igsh=cW14aWk1eXBobXNp"
+                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="https://youtube.com/yourchannel" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
 
